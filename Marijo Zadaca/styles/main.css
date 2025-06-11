@@ -1,0 +1,80 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    background: linear-gradient(135deg, #b5aac7 0%, #6d85af 100%);
+    color: #274675;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/006/551/665/non_2x/blue-ocean-with-fish-silhouette-background-free-vector.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+}
+
+.block {
+    background-color: #ffffff6e;
+    padding: 90px;
+    border-radius: 15px;
+}
+
+a {
+    padding: 20px;
+    background-color: rgba(160, 212, 255, 0.856);
+    border-radius: 10px;
+}
+
+.top-nav {
+    background-color: #fafafab4;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #a0c4ffb4;
+    border-radius: 15px;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.block {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.575);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* allows wrapping on small screens */
+    margin-top: 20px;
+}
+
+.image-row img {
+    height: 400px;         /* control vertical size */
+    width: auto;           /* keep aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+}
+@media (max-width: 768px) {
+    .image-row img {
+        height: 200px;
+    }
+}
